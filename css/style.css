@@ -1,0 +1,18 @@
+body {
+    color: #FFFFFF;
+}
+h1 {
+    font-size: 8rem;
+    margin-top: -0.8rem;
+    margin-bottom: -0.8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    line-height: 8rem;
+    text-align: center;
+    font-family: 'Arial Rounded MT Bold';
+}
+p {
+    font-family: 'Arial Rounded MT Bold';
+    font-size: 1.5rem;
+    margin: 1rem;
+}

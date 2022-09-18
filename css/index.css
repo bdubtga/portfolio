@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(270deg, #e98000, #df19e0, #00e9e9, #00e900);
+    background-size: 1000% 1000%;
+    -webkit-animation: wallgradient 15s ease infinite;
+    -moz-animation: wallgradient 15s ease infinite;
+    animation: wallgradient 15s ease infinite;
+}
+@-webkit-keyframes wallgradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes wallgradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes wallgradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
