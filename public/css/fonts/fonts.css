@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Mukta';
+    src: url(/mukta/Mukta-Regular.ttf);
+}
+h1 {
+    font-family: 'mukta', 'sans-serifl';
+}
+p {
+    font-family: 'Mukta', sans-serif;
+}
