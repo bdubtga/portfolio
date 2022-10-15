@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tw:build": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css -i ./src/css/tailwind.css --watch"
+    "tw:build": "tailwindcss build ./src/css/tailwind.css -o ./public/css/tailwind.css -i ./src/css/tailwind.css"
   },
   "repository": {
     "type": "git",
