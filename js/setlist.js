@@ -1,16 +1,11 @@
 function getset() {
-    fetch('https://api.setlist.fm/rest/1.0/setlist/3b141db', {
+    fetch('https://setlist.benjiwallis.workers.dev/', {
         method: 'GET',
         headers: {
-          'Accept': 'application/json',
-          'x-api-key': 'LJHLWRJzSyx7X7Yo_FpzeLdDaoeG8ImGy0DN'
+          'id': '3b141db', // Set the id/that end part of the URL her
         },
       })
       .then(response => response.json())
-      .then(data => {
-        console.log('Success:');
-      })
-      .catch((error) => {
-        console.error('Error:');
-      });
+      .then(data => console.log(data))
+      .catch(err => console.error(err));
 }
