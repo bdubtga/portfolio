@@ -556,6 +556,30 @@ video {
   left: 9rem;
 }
 
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.left-24 {
+  left: 6rem;
+}
+
+.left-3 {
+  left: 0.75rem;
+}
+
 .-mb-px {
   margin-bottom: -1px;
 }
