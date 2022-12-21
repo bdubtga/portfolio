@@ -1,315 +1,140 @@
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="shortcut icon" href="/site/unblockedgame76/_/rsrc/1644796460743/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/c25f92/system/app/images/apple-touch-icon.png" type="image/png" />
-  <script type="text/javascript">
-      /* Copyright 2008 Google. */
-      (function() {
-          function d(a) {
-              return document.getElementById(a)
-          }
-          window.byId = d;
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <link rel="shortcut icon" href="/site/unblockedgame76/_/rsrc/1644796460743/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/c25f92/system/app/images/apple-touch-icon.png" type="image/png" />
+        <script type="text/javascript">
+            /* Copyright 2008 Google. */
+            (function () {
+                function d(a) {
+                    return document.getElementById(a);
+                }
+                window.byId = d;
 
-          function g(a) {
-              return a.replace(/^\s+|\s+$/g, "")
-          }
-          window.trim = g;
-          var h = [],
-              k = 0;
-          window.JOT_addListener = function(a, b, c) {
-              var f = new String(k++);
-              a = {
-                  eventName: a,
-                  handler: b,
-                  compId: c,
-                  key: f
-              };
-              h.push(a);
-              return f
-          };
-          window.JOT_removeListenerByKey = function(a) {
-              for (var b = 0; b < h.length; b++)
-                  if (h[b].key == a) {
-                      h.splice(b, 1);
-                      break
-                  }
-          };
-          window.JOT_removeAllListenersForName = function(a) {
-              for (var b = 0; b < h.length; b++) h[b].eventName == a && h.splice(b, 1)
-          };
-          window.JOT_postEvent = function(a, b, c) {
-              var f = {
-                  eventName: a,
-                  eventSrc: b || {},
-                  payload: c || {}
-              };
-              if (window.JOT_fullyLoaded)
-                  for (b = h.length, c = 0; c < b && c < h.length; c++) {
-                      var e = h[c];
-                      e && e.eventName == a && (f.listenerCompId = e.compId || "", (e = "function" == typeof e.handler ? e.handler : window[e.handler]) && e(f))
-                  } else window.JOT_delayedEvents.push({
-                      eventName: a,
-                      eventSrc: b,
-                      payload: c
-                  })
-          };
-          window.JOT_delayedEvents = [];
-          window.JOT_fullyLoaded = !1;
-          window.JOT_formatRelativeToNow = function(a, b) {
-              a = ((new Date).getTime() - a) / 6E4;
-              if (1440 <= a || 0 > a) return null;
-              var c = 0;
-              60 <= a && (a /= 60, c = 2);
-              2 <= a && c++;
-              return b ? window.JOT_siteRelTimeStrs[c].replace("__duration__", Math.floor(a)) : window.JOT_userRelTimeStrs[c].replace("__duration__", Math.floor(a))
-          };
-      })()
-  </script>
-  <script>
-      var breadcrumbs = [{
-          "path": "/site/unblockedgame76/smash-karts",
-          "deleted": false,
-          "title": "Smash Karts",
-          "dir": "ltr"
-      }];
-      var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/c25f92/system/app/images/cleardot.gif';
+                function g(a) {
+                    return a.replace(/^\s+|\s+$/g, "");
+                }
+                window.trim = g;
+                var h = [],
+                    k = 0;
+                window.JOT_addListener = function (a, b, c) {
+                    var f = new String(k++);
+                    a = {
+                        eventName: a,
+                        handler: b,
+                        compId: c,
+                        key: f,
+                    };
+                    h.push(a);
+                    return f;
+                };
+                window.JOT_removeListenerByKey = function (a) {
+                    for (var b = 0; b < h.length; b++)
+                        if (h[b].key == a) {
+                            h.splice(b, 1);
+                            break;
+                        }
+                };
+                window.JOT_removeAllListenersForName = function (a) {
+                    for (var b = 0; b < h.length; b++) h[b].eventName == a && h.splice(b, 1);
+                };
+                window.JOT_postEvent = function (a, b, c) {
+                    var f = {
+                        eventName: a,
+                        eventSrc: b || {},
+                        payload: c || {},
+                    };
+                    if (window.JOT_fullyLoaded)
+                        for (b = h.length, c = 0; c < b && c < h.length; c++) {
+                            var e = h[c];
+                            e && e.eventName == a && ((f.listenerCompId = e.compId || ""), (e = "function" == typeof e.handler ? e.handler : window[e.handler]) && e(f));
+                        }
+                    else
+                        window.JOT_delayedEvents.push({
+                            eventName: a,
+                            eventSrc: b,
+                            payload: c,
+                        });
+                };
+                window.JOT_delayedEvents = [];
+                window.JOT_fullyLoaded = !1;
+                window.JOT_formatRelativeToNow = function (a, b) {
+                    a = (new Date().getTime() - a) / 6e4;
+                    if (1440 <= a || 0 > a) return null;
+                    var c = 0;
+                    60 <= a && ((a /= 60), (c = 2));
+                    2 <= a && c++;
+                    return b ? window.JOT_siteRelTimeStrs[c].replace("__duration__", Math.floor(a)) : window.JOT_userRelTimeStrs[c].replace("__duration__", Math.floor(a));
+                };
+            })();
+        </script>
+        <script>
+            var breadcrumbs = [
+                {
+                    path: "/site/unblockedgame76/smash-karts",
+                    deleted: false,
+                    title: "Smash Karts",
+                    dir: "ltr",
+                },
+            ];
+            var JOT_clearDotPath = "https://ssl.gstatic.com/sites/p/c25f92/system/app/images/cleardot.gif";
 
+            var JOT_userRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
 
-      var JOT_userRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
-
-
-
-
-      var webspace = {
-          "gvizGstaticVersion": "current",
-          "enableAnalytics": true,
-          "pageSharingId": "jotspot_page",
-          "codeembeds": {
-              "outerIframeSrc": "https://www.gstatic.com/jotspot/embeds/code/0f08d42392f2000e7e3f3daf5b427a43/outer_iframe.html",
-              "innerIframeSrc": "https://2005614007-jotspot-embeds.googleusercontent.com/code/8d87fa64604b2a11fae2ed06104c58d3/inner_iframe.html"
-          },
-          "enableUniversalAnalytics": false,
-          "sharingPolicy": "OPENED",
-          "siteTitle": "unblocked games 76",
-          "experiments": {
-              "overrideDisableDomainEditing": false,
-              "disableDomainEditing": true
-          },
-          "jot2atari": {
-              "eligibility": "INELIGIBLE"
-          },
-          "onepickUrl": "https://docs.google.com/picker",
-          "adsensePublisherId": null,
-          "features": {
-              "moreMobileStyleImprovements": null,
-              "subscriptionDataMigrationInProgress": null,
-              "plusBadge": false
-          },
-          "configProperties": {
-              "disableSiteEditing": null
-          },
-          "isPublic": true,
-          "newSitesBaseUrl": "https://sites.google.com",
-          "isConsumer": true,
-          "serverFlags": {
-              "jot2AtariLearnMoreUrl": "https://support.google.com/sites/answer/7035197"
-          },
-          "domainAnalyticsAccountId": "",
-          "plusPageId": "",
-          "signInUrl": "https://accounts.google.com/AccountChooser?continue=https://sites.google.com/site/unblockedgame76/smash-karts&service=jotspot",
-          "analyticsAccountId": "UA-137373682-1",
-          "scottyUrl": "/_/upload",
-          "homePath": "/",
-          "siteNoticeUrlEnabled": false,
-          "plusPageUrl": "",
-          "adsensePromoClickedOrSiteIneligible": true,
-          "csiReportUri": "https://gg.google.com/csi",
-          "sharingId": "jotspot",
-          "termsUrl": "//www.google.com/intl/en/policies/terms/",
-          "gvizVersion": 1,
-          "editorResources": {
-              "sitelayout": ["https://ssl.gstatic.com/sites/p/c25f92/system/app/css/sitelayouteditor.css"],
-              "text": ["https://ssl.gstatic.com/sites/p/c25f92/system/js/codemirror.js", "https://ssl.gstatic.com/sites/p/c25f92/system/app/css/codemirror_css.css", "https://ssl.gstatic.com/sites/p/c25f92/system/js/trog_edit__en_gb.js", "https://ssl.gstatic.com/sites/p/c25f92/system/app/css/trogedit.css", "/site/unblockedgame76/_/rsrc/1668098603000/system/app/css/editor.css", "https://ssl.gstatic.com/sites/p/c25f92/system/app/css/codeeditor.css", "/site/unblockedgame76/_/rsrc/1668098603000/system/app/css/camelot/editor-jfk.css"]
-          },
-          "sharingUrlPrefix": "/_/sharing",
-          "isAdsenseEnabled": true,
-          "domain": "defaultdomain",
-          "baseUri": "/site/unblockedgame76",
-          "name": "unblockedgame76",
-          "siteTemplateId": false,
-          "siteNoticeRevision": 14,
-          "siteNoticeUrlAddress": "https://sites.google.com/site/unblockedgame76/Slope-Ball-unblocked",
-          "siteNoticeMessage": "",
-          "page": {
-              "isRtlLocale": false,
-              "canDeleteWebspace": false,
-              "isPageDraft": null,
-              "parentPath": null,
-              "parentWuid": null,
-              "siteLocale": "en",
-              "timeZone": "Pacific/Auckland",
-              "type": "text",
-              "title": "Smash Karts",
-              "locale": "en_GB",
-              "wuid": "wuid:gx:7dc403233da651d9",
-              "revision": 3,
-              "path": "/smash-karts",
-              "isSiteRtlLocale": false,
-              "pageInheritsPermissions": null,
-              "name": "smash-karts",
-              "canChangePath": true,
-              "state": "",
-              "properties": {},
-              "bidiEnabled": false,
-              "currentTemplate": {
-                  "path": "/config/pagetemplates/test",
-                  "title": "test"
-              }
-          },
-          "canPublishScriptToAnyone": true,
-          "user": {
-              "keyboardShortcuts": true,
-              "sessionIndex": 0,
-              "guest_": false,
-              "displayNameOrEmail": "Benji Wallis",
-              "userName": "benjiwallis2008",
-              "uid": "02303479065309865583",
-              "domainUser": false,
-              "renderMobile": false,
-              "domain": null,
-              "namespace": "",
-              "hasWriteAccess": false,
-              "namespaceUser": false,
-              "primaryEmail": "benjiwallis2008@gmail.com",
-              "hasAdminAccess": false,
-              "isGoogleAdmin": false
-          },
-          "gadgets": {
-              "baseUri": "/site/unblockedgame76/system/app/pages/gadgets"
-          }
-      };
-      webspace.page.breadcrumbs = breadcrumbs;
-
-
-      var JOT_siteRelTimeStrs = ["a minute ago", "__duration__ minutes ago", "an hour ago", "__duration__ hours ago"];
-  </script>
-  <meta name="title" content="Smash Karts - unblocked games 76" />
-  <meta itemprop="name" content="Smash Karts - unblocked games 76" />
-  <meta property="og:title" content="Smash Karts - unblocked games 76" />
-  <meta name="description" content="On our site you will be able to play HTML5 Smash Karts unblocked games 76! Here you will find best unblocked games no flash at school of google." />
-  <meta itemprop="description" content="On our site you will be able to play HTML5 Smash Karts unblocked games 76! Here you will find best unblocked games no flash at school of google." />
-  <meta id="meta-tag-description" property="og:description" content="On our site you will be able to play HTML5 Smash Karts unblocked games 76! Here you will find best unblocked games no flash at school of google." />
-  <style type="text/css">
-  </style>
-  <link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/c25f92/system/app/themes/tiles/standard-css-tiles-ltr-ltr.css" />
-  <title>Smash Karts</title>
-  <script type="text/javascript">
-      window.jstiming.load.tick('cl');
-  </script>
-</head>
-
-<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en">
-    <div id="sites-page-toolbar" class="sites-header-divider">
-      <div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;">
-          <div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div>
-      </div>
-  </div>
-  <td id="sites-canvas-wrapper">
-      <div id="sites-canvas" role="main">
-          <div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
-          </div>
-          <h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
-              <span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Smash Karts</span>
-              <a class="text-zinc-900 text-2xl" href="index.html">Home</a>
-          </h3>
-          <div id="sites-canvas-main" class="sites-canvas-main">
-              <div class="site-code-embed-container" data-code="&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&quot;en-us&quot;&gt;&#xA;   &lt;head&gt;&#xA;      &lt;meta charset=&quot;utf-8&quot;&gt;&#xA;      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=no&quot;&gt;&#xA;&#xA;&#xA;      &lt;!-- &lt;script type=&quot;text/javascript&quot; src=&quot;xmlhttprequest-length-computable.js&quot;&gt;&lt;/script&gt; --&gt;&#xA;      &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/gh/zhit73/xml@943946a87f66424f2f80ac97c4b4a89995eba7c1/xmlhttprequest-length-computable.min.js&quot;&gt;&lt;/script&gt;&#xA;      &lt;script type=&quot;text/javascript&quot;&gt;&#xA;        window.xmlHTTPRequestLengthComputable = {&#xA;          CONTENT_ENCODING_MULTIPLE: 3.0&#xA;        }&#xA;      &lt;/script&gt;&#xA;&#xA;      &lt;title&gt;Smash Karts&lt;/title&gt;&#xA;      &lt;style&gt;&#xA;         html {&#xA;         box-sizing: border-box;&#xA;         }&#xA;         *, *:before, *:after {&#xA;         box-sizing: inherit;&#xA;         }&#xA;         body {&#xA;         margin: 0;&#xA;         background: #1b70f0;&#xA;         background-image: url(&quot;images/overlay.png&quot;), url(&quot;images/menuBGTile.png&quot;);&#xA;         background-size: cover, 13vw;&#xA;         background-repeat: no-repeat, repeat; &#xA;         }&#xA;         #gameContainer {&#xA;          position: relative;&#xA;          width: 100vw;&#xA;          height: 100vh;&#xA;         }&#xA;         #adLongContainer {&#xA;          position: absolute;&#xA;          /* border: 1px solid red; */&#xA;          z-index: 100;&#xA;          bottom: 0px;&#xA;          width: 100vw;&#xA;          align-items: center;&#xA;          justify-content: center;&#xA;          }&#xA;         #adContainer {&#xA;          position: absolute;&#xA;          /* border: 1px solid red; */&#xA;          z-index: 100;&#xA;          top: 0px;&#xA;          right: 0px;&#xA;          width: auto;&#xA;          height: auto;&#xA;        }&#xA;          @media screen and (max-width: 600px) &#xA;            {&#xA;              {&#xA;                /* border: 1px solid blue; */&#xA;                display: none;&#xA;              }&#xA;            }&#xA;            #adContainer2 {&#xA;          position: absolute;&#xA;          /* border: 1px solid red; */&#xA;          z-index: 100;&#xA;          top: 0px;&#xA;          right: 0px;&#xA;          width: auto;&#xA;          height: auto;&#xA;        }&#xA;          @media screen and (max-width: 600px) &#xA;            {&#xA;              {&#xA;                /* border: 1px solid blue; */&#xA;                display: none;&#xA;              }&#xA;            }&#xA;         canvas {&#xA;         width: 100%;&#xA;         height: 100%;&#xA;         display: block;&#xA;         }&#xA;         /* try to handle mobile dialog */&#xA;         canvas + * {&#xA;         z-index: 2;&#xA;         }&#xA;         .logo {&#xA;         display: block;&#xA;         max-width: 90%;&#xA;         max-height: 40vh;&#xA;         }&#xA;         .progress {&#xA;         margin: 1.5em;&#xA;         border: 2px solid ;&#xA;         width: 25vw;&#xA;         display: none;&#xA;         }&#xA;         .progress .full {&#xA;         margin: 2px;&#xA;         background: white;&#xA;         height: 1em;&#xA;         transform-origin: top left;&#xA;         }&#xA;         #loader {&#xA;         position: absolute;&#xA;         left: 0;&#xA;         top: 0;&#xA;         width: 100vw;&#xA;         height: 100vh;&#xA;         display: flex;&#xA;         flex-direction: column;&#xA;         align-items: center;&#xA;         justify-content: center;&#xA;         background: #1b70f0;&#xA;         background-image: url(&quot;images/overlay.png&quot;), url(&quot;images/menuBGTile.png&quot;);&#xA;         background-size: cover, 13vw;&#xA;         background-repeat: no-repeat, repeat; &#xA;         }&#xA;         .spinner {&#xA;            position:absolute;&#xA;            left: 2vw;&#xA;            bottom: 2vh;&#xA;            border: 10px solid #f3f3f3; &#xA;            border-top: 10px solid #3498db;&#xA;            border-radius: 50%;&#xA;            width: 10vh;&#xA;            height: 10vh;&#xA;            animation: spin 1s linear infinite;&#xA;          }&#xA;&#xA;          @keyframes spin {&#xA;            0% { transform: rotate(0deg); }&#xA;            100% { transform: rotate(360deg); }&#xA;          }&#xA;&#xA;&#xA;         /* for all screens */&#xA;        #rotate-landscape {display: none;}&#xA;       &#xA;        /* only when orientation is in portrait mode */&#xA;        @media all and (orientation:portrait) {&#xA;            #rotate-landscape {&#xA;              position: absolute;&#xA;              left: 0;&#xA;              top: 0;&#xA;              width: 100vw;&#xA;              height: 100vh;&#xA;              display: block;&#xA;              background: #1b70f0;&#xA;              background-image: url(&quot;images/overlay.png&quot;), url(&quot;images/menuBGTile.png&quot;);&#xA;              background-size: cover, 13vw;&#xA;              background-repeat: no-repeat, repeat; &#xA;            }&#xA;        }&#xA;&#xA;        .center {&#xA;          position: fixed;&#xA;          top: 50%;&#xA;          left: 50%;&#xA;          transform: translate(-50%, -50%);&#xA;          width: 90vw;&#xA;        }&#xA;      &lt;/style&gt;&#xA;&#xA;&#xA;      &lt;script&gt;&#xA;        var url = (window.location != window.parent.location) ? document.referrer : document.location.href;&#xA;        let adBreak;&#xA;        if(url.startsWith(&quot;/&quot;) || url.startsWith(&quot;&quot;) ||&#xA;          url.startsWith(&quot;&quot;) || url.startsWith(&quot;&quot;)&#xA;          || url.includes(&quot;smashkarts-dev.firebaseapp.com&quot;))&#xA;        {&#xA;          window.adsbygoogle = window.adsbygoogle || [];&#xA;          adBreak =  adConfig = function(o) {adsbygoogle.push(o);};&#xA;          adConfig({preloadAdBreaks: &quot;on&quot;, sound: &quot;on&quot;});&#xA;        }&#xA;      &lt;/script&gt;&#xA;      &lt;!-- GOOGLE AD END --&gt;&#xA;&#xA;      &lt;!-- AIP AD START --&gt;&#xA;      &lt;meta name=&quot;viewport&quot; content=&quot;minimal-ui, user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width&quot; /&gt;&#xA;      &lt;title&gt;AdinPlay Ads&lt;/title&gt;&#xA;      &lt;script&gt;&#xA;      window.aiptag = window.aiptag || {cmd: []};&#xA;      aiptag.cmd.display = aiptag.cmd.display || [];&#xA;&#xA;      // Show GDPR consent tool&#xA;      aiptag.gdprShowConsentTool = true;&#xA;      aiptag.gdprConsentToolPosition =&quot;bottom&quot;;&#xA;      &lt;/script&gt;&#xA;      &lt;script async src=&quot;/o__api.adinplay.com/libs/aiptag/pub/SHK/smashkarts.io/tag.min.js&quot;&gt;&lt;/script&gt;&#xA;      &lt;!-- AIP AD END --&gt;&#xA;      &lt;!-- AD INIT END --&gt;&#xA;   &lt;/head&gt;&#xA;   &lt;body&gt;&#xA;    &lt;div id=&quot;mainContainer&quot;&gt;&#xA;      &lt;canvas id=&quot;gameContainer&quot;&gt;&lt;/canvas&gt;&#xA;      &lt;div id=&quot;loader&quot;&gt;&#xA;         &lt;img class=&quot;logo&quot; src=&quot;https://lh6.googleusercontent.com/kXCFATbe9edo1UIK7KWzmJDWsHlr8V_UnEuvFQv_0kQMp4cj36qg5T_lk546lvuY0cV5HSlSlxTxCXvQ92Oj0A3ya7akvmqnUmeIKp7TId-6-98mUddrlArxZk7q7y1AcN8ug4zB&quot;&gt;&#xA;         &lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;&#xA;         &lt;div class=&quot;progress&quot;&gt;&#xA;            &lt;div class=&quot;full&quot;&gt;&lt;/div&gt;&#xA;         &lt;/div&gt;&#xA;                  &#xA;      &lt;/div&gt;&#xA;      &lt;div id=&quot;adContainer&quot; style=&quot;display: none;&quot;&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div id=&quot;adContainer2&quot; style=&quot;display: none;&quot;&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div id=&quot;adLongContainer&quot; style=&quot;display: none;&quot;&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div id=&quot;videoAdContainer&quot;&gt;&#xA;        &lt;div id=&quot;preroll&quot;&gt;&lt;/div&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div id=&quot;rotate-landscape&quot;&gt;&#xA;      &lt;img src=&quot;/images/r.png&quot; class=&quot;center&quot;&gt;&#xA;    &lt;/div&gt;&#xA;   &lt;/body&gt;&#xA;   &lt;script src=&quot;https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js&quot;&gt;&lt;/script&gt;&#xA;   &lt;script src=&quot;https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js&quot;&gt;&lt;/script&gt;&#xA;   &lt;script src=&quot;https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js&quot;&gt;&lt;/script&gt;&#xA;   &lt;script src=&quot;https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js&quot;&gt;&lt;/script&gt;&#xA;   &lt;script src=&quot;https://www.gstatic.com/firebasejs/7.23.0/firebase-performance.js&quot;&gt;&lt;/script&gt;&#xA;&#xA;   &lt;script src=&quot;https://cdn.jsdelivr.net/gh/zhit73/xml@d5fed179d2756da889d93d19c04ce92392bf9ecb/main-v2.js&quot;&gt;&lt;/script&gt;&#xA;   &lt;script src=&quot;https://cdn.jsdelivr.net/gh/zhit73/xml@d5fed179d2756da889d93d19c04ce92392bf9ecb/auth-v2.js&quot;&gt;&lt;/script&gt;&#xA;   &lt;script src=&quot;https://cdn.jsdelivr.net/gh/zhit73/xml@d5fed179d2756da889d93d19c04ce92392bf9ecb/ads-v2.js&quot;&gt;&lt;/script&gt;&#xA;   &lt;script src=&quot;https://cdn.jsdelivr.net/gh/zhit73/xml@d5fed179d2756da889d93d19c04ce92392bf9ecb/ads-adsbygoogle-v2.js&quot;&gt;&lt;/script&gt;&#xA;   &lt;script src=&quot;https://cdn.jsdelivr.net/gh/zhit73/xml@d5fed179d2756da889d93d19c04ce92392bf9ecb/ad-blocker.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&#xA;&#xA;   &lt;script&gt;&#xA;      if ('serviceWorker' in navigator) {&#xA;        navigator.serviceWorker.register('service-worker2.js');&#xA;      }&#xA;&#xA;      var firebaseConfig = {&#xA;   apiKey: &quot;AIzaSyAdY2qq9083amKDS0R8tn2tjIKQB8mocco&quot;,&#xA;   authDomain: &quot;webgltest-17af1.firebaseapp.com&quot;,&#xA;   databaseURL: &quot;https://webgltest-17af1.firebaseio.com&quot;,&#xA;   projectId: &quot;webgltest-17af1&quot;,&#xA;   storageBucket: &quot;webgltest-17af1.appspot.com&quot;,&#xA;   messagingSenderId: &quot;480659433590&quot;,&#xA;   appId: &quot;1:480659433590:web:a01ad1599e963843a0d757&quot;,&#xA;   measurementId: &quot;G-1W23DRFHK9&quot;&#xA;  };&#xA;&#xA;   // Initialize Firebase&#xA;    firebase.initializeApp(firebaseConfig);&#xA;&#xA;      var firebaseSupported = false;&#xA;      if(firebase.analytics != null)&#xA;      {&#xA;        firebase.analytics.isSupported().then((isSupported) =&gt; &#xA;        {&#xA;          if (isSupported) &#xA;          {&#xA;            analytics = firebase.analytics();&#xA;            firebaseSupported = true;&#xA;          }&#xA;          else &#xA;          {&#xA;            console.log(&quot;firebase.analytics() not supported &quot;);&#xA;          }&#xA;        })&#xA;      }&#xA;&#xA;      var perf = firebase.performance();&#xA;&#xA;      firebaseSetScreen(&quot;loading_start&quot;);&#xA;      firebaseLogEvent(&quot;loading_page_start&quot;);&#xA;&#xA;      var timerStart = Date.now();&#xA;      var sentGameInstanceStartEvent = false;&#xA;      &#xA;      const buildUrl =&quot;https://smashkartsgc.b-cdn.net/Build2020New&quot;;&#xA;      const loaderUrl = buildUrl + &quot;/c4c07f153778d8abf1842ac44b3ff052.loader.js&quot;;&#xA;      const config = {&#xA;        dataUrl: buildUrl + &quot;/c603bc3234de75b89771a25f247d9fb3.data.br&quot;,&#xA;        frameworkUrl: buildUrl + &quot;/b2121ee6a2b1fc035810ba89610deac2.framework.js.br&quot;,&#xA;        codeUrl: buildUrl + &quot;/d5902046ae03cce30ca11a6d77cd3683.wasm.br&quot;,&#xA;// #if MEMORY_FILENAME&#xA;//         memoryUrl: buildUrl + &quot;/{{{ MEMORY_FILENAME }}}&quot;,&#xA;// #endif&#xA;// #if SYMBOLS_FILENAME&#xA;//         symbolsUrl: buildUrl + &quot;/{{{ SYMBOLS_FILENAME }}}&quot;,&#xA;// #endif&#xA;        streamingAssetsUrl: &quot;StreamingAssets&quot;,&#xA;        companyName: &quot;TallTeam&quot;,&#xA;        productName: &quot;Smash Karts&quot;,&#xA;        productVersion: &quot;1.0.9&quot;,&#xA;      };&#xA;&#xA;      var container = document.querySelector(&quot;#mainContainer&quot;);&#xA;      var canvas = document.querySelector(&quot;#gameContainer&quot;);&#xA;      var loadingBar = document.querySelector(&quot;#loader&quot;);&#xA;      var progressBarFull = document.querySelector(&quot;#loader .progress .full&quot;);&#xA;      var rotateLandscape = document.querySelector(&quot;#rotate-landscape&quot;);&#xA;&#xA;      if (isMobile()) &#xA;      {&#xA;        container.className =&quot;unity-mobile&quot;;&#xA;      }&#xA;      else&#xA;      {&#xA;        rotateLandscape.id =&quot;rotateLandscapeOff&quot;;&#xA;        rotateLandscape.style.display =&quot;none&quot;;&#xA;      }&#xA;      const progress = document.querySelector(&quot;#loader .progress&quot;);&#xA;          progress.style.display =&quot;block&quot;;&#xA;          progressBarFull.style.width =&quot;0%&quot;;&#xA;      const myTrace = perf.trace('unityLoader');&#xA;      myTrace.start();&#xA;&#xA;      var script = document.createElement(&quot;script&quot;);&#xA;      script.src = loaderUrl;&#xA;&#xA;      var progressCreateUnityInstance = 0;&#xA;      var progressPostCreateUnityInstance = 0;&#xA;      var updateProgressInterval = setInterval(updateProgress, 100);&#xA;&#xA;      if(isMobile())&#xA;      {&#xA;        setInterval(updateScreenSize, 100);&#xA;      }&#xA;      var gameInstance;&#xA;      script.onload = () =&gt; {&#xA;          createUnityInstance(canvas, config, (progress) =&gt; {&#xA;          progressCreateUnityInstance = 100 * progress;&#xA;          setProgressWidth();&#xA;        }).then((unityInstance) =&gt; {&#xA;          if(isMobile()) document.body.style.background =&quot;#000000&quot;;&#xA;          loadingBar.style.display =&quot;none&quot;;&#xA;          window.unityGame = unityInstance;&#xA;          gameInstance = unityInstance;&#xA;&#xA;          if(updateProgressInterval) clearInterval(updateProgressInterval);&#xA;          myTrace.stop();&#xA;          var lt = Date.now() - timerStart;&#xA;          firebaseLogEventWithParam(&quot;loading_page_complete&quot;, &quot;time&quot;, lt);&#xA;          setV(lt);&#xA;        }).catch((message) =&gt; {&#xA;          alert(&quot;TT UnityLoader Error&quot; + message);&#xA;        });&#xA;      };&#xA;      document.body.appendChild(script);&#xA;&#xA;function updateProgress()&#xA;{&#xA;  if(progressCreateUnityInstance &gt; 85)&#xA;  {&#xA;    progressPostCreateUnityInstance += 1;&#xA;    setProgressWidth();&#xA;  }&#xA;}&#xA;&#xA;var lastInnerHeight;&#xA;function updateScreenSize()&#xA;{&#xA;  if(canvas)&#xA;  {&#xA;    if(!lastInnerHeight || lastInnerHeight != window.innerHeight)&#xA;    {&#xA;      lastInnerHeight = window.innerHeight;&#xA;      canvas.style.height = lastInnerHeight + &quot;px&quot;;&#xA;    }&#xA;  }&#xA;}&#xA;&#xA;function setProgressWidth()&#xA;{&#xA;  if(progressCreateUnityInstance == 100.0)&#xA;  {&#xA;    progressBarFull.style.width =&quot;100%&quot;;&#xA;  }&#xA;  else&#xA;  {&#xA;    var percent;&#xA;    if(isMobile()) &#xA;    {&#xA;      percent = progressCreateUnityInstance * 0.6 + (progressPostCreateUnityInstance*0.5*0.2 + progressCreateUnityInstance*0.5*0.2*0.05);&#xA;      percent =  Math.min(percent, 90);&#xA;    }&#xA;    else&#xA;    {&#xA;      percent = progressCreateUnityInstance * 0.9 + progressPostCreateUnityInstance * 0.1;&#xA;      percent = Math.min(percent, 95);&#xA;    }&#xA;    progressBarFull.style.width = percent + &quot;%&quot;;&#xA;  }&#xA;}&#xA;   &lt;/script&gt;&#xA;&lt;/html&gt;" data-scrollable="false" style="display:block;text-align:center;margin-right:auto;margin-left:auto;width:800px;height:600px;"></div>
-              <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-                  window.jstiming.load.tick('sjl');
-              </script>
-              <script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/c25f92/system/js/jot_min_view__en.js"></script>
-              <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-                  window.jstiming.load.tick('jl');
-              </script>
-              <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-                  sites.Searchbox.initialize(
-                      'sites-searchbox-search-button', {
-                          "object": []
-                      } ['object'],
-                      'search-site', {
-                          "label": "Configure search options...",
-                          "url": "/site/unblockedgame76/system/app/pages/admin/settings"
-                      });
-              </script>
-              <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-                  gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
-              </script>
-              <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
-                  JOT_setupNav("6106106009745729", "Навигация", true);
-                  JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_6106106009745729');
-              </script>
-              <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
-                  JOT_setupNav("44950488823270907", "Навигация", false);
-                  JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_44950488823270907');
-              </script>
-              <script xmlns="http://www.w3.org/1999/xhtml">
-                  window.onload = function() {
-                      if (false) {
-                          JOT_setMobilePreview();
-                      }
-                      var loadTimer = window.jstiming.load;
-                      loadTimer.tick("ol");
-                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
-                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
-                  }
-              </script>
-              <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-                  JOT_insertAnalyticsCode(false,
-                      false);
-              </script>
-              <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-                  var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
-                      webspace, "en");
-                  maestroRunner.initListeners();
-                  maestroRunner.installEditRender();
-              </script>
-              <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
-                  //<![CDATA[
-                  // Decorate any fastUI buttons on the page with a class of 'goog-button'.
-                  if (webspace.user.hasWriteAccess) {
-                      JOT_decorateButtons();
-                  }
-
-                  // Fires delayed events.
-                  (function() {
-                      JOT_fullyLoaded = true;
-                      var delayedEvents = JOT_delayedEvents;
-                      for (var x = 0; x < delayedEvents.length; x++) {
-                          var event = delayedEvents[x];
-                          JOT_postEvent(event.eventName, event.eventSrc, event.payload);
-                      }
-                      JOT_delayedEvents = null;
-                      JOT_postEvent('pageLoaded');
-                  })();
-                  //]]>
-              </script>
-              <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-                  JOT_postEvent('decorateGvizCharts');
-              </script>
-              <script type="text/javascript">
-                  JOT_setupPostRenderingManager();
-              </script>
-              <script type="text/javascript">
-                  JOT_postEvent('renderPlus', null, 'sites-chrome-main');
-              </script>
-              <script type="text/javascript">
-                  sites.codeembed.init();
-              </script>
-              <div id="server-timer-div" style="display:none"> </div>
-              <script type="text/javascript">
-                  window.jstiming.load.tick('render');
-                  JOT_postEvent('usercontentrendered', this);
-              </script>
-</body>
-
+            var webspace = {
+                codeembeds: {
+                    outerIframeSrc: "https://www.gstatic.com/jotspot/embeds/code/0f08d42392f2000e7e3f3daf5b427a43/outer_iframe.html",
+                    innerIframeSrc: "https://2005614007-jotspot-embeds.googleusercontent.com/code/8d87fa64604b2a11fae2ed06104c58d3/inner_iframe.html",
+                },
+                page: {
+                    isRtlLocale: false,
+                    canDeleteWebspace: false,
+                    isPageDraft: null,
+                    parentPath: null,
+                    parentWuid: null,
+                    siteLocale: "en",
+                    timeZone: "Pacific/Auckland",
+                    type: "text",
+                    title: "Smash Karts",
+                    locale: "en_GB",
+                    wuid: "wuid:gx:7dc403233da651d9",
+                    revision: 3,
+                    path: "/smash-karts",
+                    isSiteRtlLocale: false,
+                    pageInheritsPermissions: null,
+                    name: "smash-karts",
+                    canChangePath: true,
+                    state: "",
+                    properties: {},
+                    bidiEnabled: false,
+                    currentTemplate: {
+                        path: "/config/pagetemplates/test",
+                        title: "test",
+                    },
+                },
+            };
+        </script>
+        <link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/c25f92/system/app/themes/tiles/standard-css-tiles-ltr-ltr.css" />
+        <title>Smash Karts</title>
+    </head>
+    <body xmlns="http://www.google.com/ns/jotspot" id="body" class="en">
+        <div id="sites-page-toolbar" class="sites-header-divider">
+            <div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display: none">
+                <div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"></div>
+            </div>
+        </div>
+        <td id="sites-canvas-wrapper">
+            <div id="sites-canvas" role="main">
+                <a href="index.html">Home</a>
+                <div id="sites-canvas-main" class="sites-canvas-main">
+                    <div class="site-code-embed-container" data-code='&lt;!DOCTYPE html&gt;&#xA;&lt;html lang="en-us"&gt;&#xA;   &lt;head&gt;&#xA;      &lt;meta charset="utf-8"&gt;&#xA;      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"&gt;&#xA;&#xA;&#xA;      &lt;!-- &lt;script type="text/javascript" src="xmlhttprequest-length-computable.js"&gt;&lt;/script&gt; --&gt;&#xA;      &lt;script type="text/javascript" src="https://cdn.jsdelivr.net/gh/zhit73/xml@943946a87f66424f2f80ac97c4b4a89995eba7c1/xmlhttprequest-length-computable.min.js"&gt;&lt;/script&gt;&#xA;      &lt;script type="text/javascript"&gt;&#xA;        window.xmlHTTPRequestLengthComputable = {&#xA;          CONTENT_ENCODING_MULTIPLE: 3.0&#xA;        }&#xA;      &lt;/script&gt;&#xA;&#xA;      &lt;title&gt;Smash Karts&lt;/title&gt;&#xA;      &lt;style&gt;&#xA;         html {&#xA;         box-sizing: border-box;&#xA;         }&#xA;         *, *:before, *:after {&#xA;         box-sizing: inherit;&#xA;         }&#xA;         body {&#xA;         margin: 0;&#xA;         background: #1b70f0;&#xA;         background-image: url("images/overlay.png"), url("images/menuBGTile.png");&#xA;         background-size: cover, 13vw;&#xA;         background-repeat: no-repeat, repeat; &#xA;         }&#xA;         #gameContainer {&#xA;          position: relative;&#xA;          width: 100vw;&#xA;          height: 100vh;&#xA;         }&#xA;         #adLongContainer {&#xA;          position: absolute;&#xA;          /* border: 1px solid red; */&#xA;          z-index: 100;&#xA;          bottom: 0px;&#xA;          width: 100vw;&#xA;          align-items: center;&#xA;          justify-content: center;&#xA;          }&#xA;         #adContainer {&#xA;          position: absolute;&#xA;          /* border: 1px solid red; */&#xA;          z-index: 100;&#xA;          top: 0px;&#xA;          right: 0px;&#xA;          width: auto;&#xA;          height: auto;&#xA;        }&#xA;          @media screen and (max-width: 600px) &#xA;            {&#xA;              {&#xA;                /* border: 1px solid blue; */&#xA;                display: none;&#xA;              }&#xA;            }&#xA;            #adContainer2 {&#xA;          position: absolute;&#xA;          /* border: 1px solid red; */&#xA;          z-index: 100;&#xA;          top: 0px;&#xA;          right: 0px;&#xA;          width: auto;&#xA;          height: auto;&#xA;        }&#xA;          @media screen and (max-width: 600px) &#xA;            {&#xA;              {&#xA;                /* border: 1px solid blue; */&#xA;                display: none;&#xA;              }&#xA;            }&#xA;         canvas {&#xA;         width: 100%;&#xA;         height: 100%;&#xA;         display: block;&#xA;         }&#xA;         /* try to handle mobile dialog */&#xA;         canvas + * {&#xA;         z-index: 2;&#xA;         }&#xA;         .logo {&#xA;         display: block;&#xA;         max-width: 90%;&#xA;         max-height: 40vh;&#xA;         }&#xA;         .progress {&#xA;         margin: 1.5em;&#xA;         border: 2px solid ;&#xA;         width: 25vw;&#xA;         display: none;&#xA;         }&#xA;         .progress .full {&#xA;         margin: 2px;&#xA;         background: white;&#xA;         height: 1em;&#xA;         transform-origin: top left;&#xA;         }&#xA;         #loader {&#xA;         position: absolute;&#xA;         left: 0;&#xA;         top: 0;&#xA;         width: 100vw;&#xA;         height: 100vh;&#xA;         display: flex;&#xA;         flex-direction: column;&#xA;         align-items: center;&#xA;         justify-content: center;&#xA;         background: #1b70f0;&#xA;         background-image: url("images/overlay.png"), url("images/menuBGTile.png");&#xA;         background-size: cover, 13vw;&#xA;         background-repeat: no-repeat, repeat; &#xA;         }&#xA;         .spinner {&#xA;            position:absolute;&#xA;            left: 2vw;&#xA;            bottom: 2vh;&#xA;            border: 10px solid #f3f3f3; &#xA;            border-top: 10px solid #3498db;&#xA;            border-radius: 50%;&#xA;            width: 10vh;&#xA;            height: 10vh;&#xA;            animation: spin 1s linear infinite;&#xA;          }&#xA;&#xA;          @keyframes spin {&#xA;            0% { transform: rotate(0deg); }&#xA;            100% { transform: rotate(360deg); }&#xA;          }&#xA;&#xA;&#xA;         /* for all screens */&#xA;        #rotate-landscape {display: none;}&#xA;       &#xA;        /* only when orientation is in portrait mode */&#xA;        @media all and (orientation:portrait) {&#xA;            #rotate-landscape {&#xA;              position: absolute;&#xA;              left: 0;&#xA;              top: 0;&#xA;              width: 100vw;&#xA;              height: 100vh;&#xA;              display: block;&#xA;              background: #1b70f0;&#xA;              background-image: url("images/overlay.png"), url("images/menuBGTile.png");&#xA;              background-size: cover, 13vw;&#xA;              background-repeat: no-repeat, repeat; &#xA;            }&#xA;        }&#xA;&#xA;        .center {&#xA;          position: fixed;&#xA;          top: 50%;&#xA;          left: 50%;&#xA;          transform: translate(-50%, -50%);&#xA;          width: 90vw;&#xA;        }&#xA;      &lt;/style&gt;&#xA;&#xA;&#xA;      &lt;script&gt;&#xA;        var url = (window.location != window.parent.location) ? document.referrer : document.location.href;&#xA;        let adBreak;&#xA;        if(url.startsWith("/") || url.startsWith("") ||&#xA;          url.startsWith("") || url.startsWith("")&#xA;          || url.includes("smashkarts-dev.firebaseapp.com"))&#xA;        {&#xA;          window.adsbygoogle = window.adsbygoogle || [];&#xA;          adBreak =  adConfig = function(o) {adsbygoogle.push(o);};&#xA;          adConfig({preloadAdBreaks: "on", sound: "on"});&#xA;        }&#xA;      &lt;/script&gt;&#xA;      &lt;!-- GOOGLE AD END --&gt;&#xA;&#xA;      &lt;!-- AIP AD START --&gt;&#xA;      &lt;meta name="viewport" content="minimal-ui, user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width" /&gt;&#xA;      &lt;title&gt;AdinPlay Ads&lt;/title&gt;&#xA;      &lt;script&gt;&#xA;      window.aiptag = window.aiptag || {cmd: []};&#xA;      aiptag.cmd.display = aiptag.cmd.display || [];&#xA;&#xA;      // Show GDPR consent tool&#xA;      aiptag.gdprShowConsentTool = true;&#xA;      aiptag.gdprConsentToolPosition ="bottom";&#xA;      &lt;/script&gt;&#xA;      &lt;script async src="/o__api.adinplay.com/libs/aiptag/pub/SHK/smashkarts.io/tag.min.js"&gt;&lt;/script&gt;&#xA;      &lt;!-- AIP AD END --&gt;&#xA;      &lt;!-- AD INIT END --&gt;&#xA;   &lt;/head&gt;&#xA;   &lt;body&gt;&#xA;    &lt;div id="mainContainer"&gt;&#xA;      &lt;canvas id="gameContainer"&gt;&lt;/canvas&gt;&#xA;      &lt;div id="loader"&gt;&#xA;         &lt;img class="logo" src="https://lh6.googleusercontent.com/kXCFATbe9edo1UIK7KWzmJDWsHlr8V_UnEuvFQv_0kQMp4cj36qg5T_lk546lvuY0cV5HSlSlxTxCXvQ92Oj0A3ya7akvmqnUmeIKp7TId-6-98mUddrlArxZk7q7y1AcN8ug4zB"&gt;&#xA;         &lt;div class="spinner"&gt;&lt;/div&gt;&#xA;         &lt;div class="progress"&gt;&#xA;            &lt;div class="full"&gt;&lt;/div&gt;&#xA;         &lt;/div&gt;&#xA;                  &#xA;      &lt;/div&gt;&#xA;      &lt;div id="adContainer" style="display: none;"&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div id="adContainer2" style="display: none;"&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div id="adLongContainer" style="display: none;"&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div id="videoAdContainer"&gt;&#xA;        &lt;div id="preroll"&gt;&lt;/div&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div id="rotate-landscape"&gt;&#xA;      &lt;img src="/images/r.png" class="center"&gt;&#xA;    &lt;/div&gt;&#xA;   &lt;/body&gt;&#xA;   &lt;script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"&gt;&lt;/script&gt;&#xA;   &lt;script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"&gt;&lt;/script&gt;&#xA;   &lt;script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"&gt;&lt;/script&gt;&#xA;   &lt;script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"&gt;&lt;/script&gt;&#xA;   &lt;script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-performance.js"&gt;&lt;/script&gt;&#xA;&#xA;   &lt;script src="https://cdn.jsdelivr.net/gh/zhit73/xml@d5fed179d2756da889d93d19c04ce92392bf9ecb/main-v2.js"&gt;&lt;/script&gt;&#xA;   &lt;script src="https://cdn.jsdelivr.net/gh/zhit73/xml@d5fed179d2756da889d93d19c04ce92392bf9ecb/auth-v2.js"&gt;&lt;/script&gt;&#xA;   &lt;script src="https://cdn.jsdelivr.net/gh/zhit73/xml@d5fed179d2756da889d93d19c04ce92392bf9ecb/ads-v2.js"&gt;&lt;/script&gt;&#xA;   &lt;script src="https://cdn.jsdelivr.net/gh/zhit73/xml@d5fed179d2756da889d93d19c04ce92392bf9ecb/ads-adsbygoogle-v2.js"&gt;&lt;/script&gt;&#xA;   &lt;script src="https://cdn.jsdelivr.net/gh/zhit73/xml@d5fed179d2756da889d93d19c04ce92392bf9ecb/ad-blocker.js" type="text/javascript"&gt;&lt;/script&gt;&#xA;&#xA;   &lt;script&gt;&#xA;      if (&apos;serviceWorker&apos; in navigator) {&#xA;        navigator.serviceWorker.register(&apos;service-worker2.js&apos;);&#xA;      }&#xA;&#xA;      var firebaseConfig = {&#xA;   apiKey: "AIzaSyAdY2qq9083amKDS0R8tn2tjIKQB8mocco",&#xA;   authDomain: "webgltest-17af1.firebaseapp.com",&#xA;   databaseURL: "https://webgltest-17af1.firebaseio.com",&#xA;   projectId: "webgltest-17af1",&#xA;   storageBucket: "webgltest-17af1.appspot.com",&#xA;   messagingSenderId: "480659433590",&#xA;   appId: "1:480659433590:web:a01ad1599e963843a0d757",&#xA;   measurementId: "G-1W23DRFHK9"&#xA;  };&#xA;&#xA;   // Initialize Firebase&#xA;    firebase.initializeApp(firebaseConfig);&#xA;&#xA;      var firebaseSupported = false;&#xA;      if(firebase.analytics != null)&#xA;      {&#xA;        firebase.analytics.isSupported().then((isSupported) =&gt; &#xA;        {&#xA;          if (isSupported) &#xA;          {&#xA;            analytics = firebase.analytics();&#xA;            firebaseSupported = true;&#xA;          }&#xA;          else &#xA;          {&#xA;            console.log("firebase.analytics() not supported ");&#xA;          }&#xA;        })&#xA;      }&#xA;&#xA;      var perf = firebase.performance();&#xA;&#xA;      firebaseSetScreen("loading_start");&#xA;      firebaseLogEvent("loading_page_start");&#xA;&#xA;      var timerStart = Date.now();&#xA;      var sentGameInstanceStartEvent = false;&#xA;      &#xA;      const buildUrl ="https://smashkartsgc.b-cdn.net/Build2020New";&#xA;      const loaderUrl = buildUrl + "/c4c07f153778d8abf1842ac44b3ff052.loader.js";&#xA;      const config = {&#xA;        dataUrl: buildUrl + "/c603bc3234de75b89771a25f247d9fb3.data.br",&#xA;        frameworkUrl: buildUrl + "/b2121ee6a2b1fc035810ba89610deac2.framework.js.br",&#xA;        codeUrl: buildUrl + "/d5902046ae03cce30ca11a6d77cd3683.wasm.br",&#xA;// #if MEMORY_FILENAME&#xA;//         memoryUrl: buildUrl + "/{{{ MEMORY_FILENAME }}}",&#xA;// #endif&#xA;// #if SYMBOLS_FILENAME&#xA;//         symbolsUrl: buildUrl + "/{{{ SYMBOLS_FILENAME }}}",&#xA;// #endif&#xA;        streamingAssetsUrl: "StreamingAssets",&#xA;        companyName: "TallTeam",&#xA;        productName: "Smash Karts",&#xA;        productVersion: "1.0.9",&#xA;      };&#xA;&#xA;      var container = document.querySelector("#mainContainer");&#xA;      var canvas = document.querySelector("#gameContainer");&#xA;      var loadingBar = document.querySelector("#loader");&#xA;      var progressBarFull = document.querySelector("#loader .progress .full");&#xA;      var rotateLandscape = document.querySelector("#rotate-landscape");&#xA;&#xA;      if (isMobile()) &#xA;      {&#xA;        container.className ="unity-mobile";&#xA;      }&#xA;      else&#xA;      {&#xA;        rotateLandscape.id ="rotateLandscapeOff";&#xA;        rotateLandscape.style.display ="none";&#xA;      }&#xA;      const progress = document.querySelector("#loader .progress");&#xA;          progress.style.display ="block";&#xA;          progressBarFull.style.width ="0%";&#xA;      const myTrace = perf.trace(&apos;unityLoader&apos;);&#xA;      myTrace.start();&#xA;&#xA;      var script = document.createElement("script");&#xA;      script.src = loaderUrl;&#xA;&#xA;      var progressCreateUnityInstance = 0;&#xA;      var progressPostCreateUnityInstance = 0;&#xA;      var updateProgressInterval = setInterval(updateProgress, 100);&#xA;&#xA;      if(isMobile())&#xA;      {&#xA;        setInterval(updateScreenSize, 100);&#xA;      }&#xA;      var gameInstance;&#xA;      script.onload = () =&gt; {&#xA;          createUnityInstance(canvas, config, (progress) =&gt; {&#xA;          progressCreateUnityInstance = 100 * progress;&#xA;          setProgressWidth();&#xA;        }).then((unityInstance) =&gt; {&#xA;          if(isMobile()) document.body.style.background ="#000000";&#xA;          loadingBar.style.display ="none";&#xA;          window.unityGame = unityInstance;&#xA;          gameInstance = unityInstance;&#xA;&#xA;          if(updateProgressInterval) clearInterval(updateProgressInterval);&#xA;          myTrace.stop();&#xA;          var lt = Date.now() - timerStart;&#xA;          firebaseLogEventWithParam("loading_page_complete", "time", lt);&#xA;          setV(lt);&#xA;        }).catch((message) =&gt; {&#xA;          alert("TT UnityLoader Error" + message);&#xA;        });&#xA;      };&#xA;      document.body.appendChild(script);&#xA;&#xA;function updateProgress()&#xA;{&#xA;  if(progressCreateUnityInstance &gt; 85)&#xA;  {&#xA;    progressPostCreateUnityInstance += 1;&#xA;    setProgressWidth();&#xA;  }&#xA;}&#xA;&#xA;var lastInnerHeight;&#xA;function updateScreenSize()&#xA;{&#xA;  if(canvas)&#xA;  {&#xA;    if(!lastInnerHeight || lastInnerHeight != window.innerHeight)&#xA;    {&#xA;      lastInnerHeight = window.innerHeight;&#xA;      canvas.style.height = lastInnerHeight + "px";&#xA;    }&#xA;  }&#xA;}&#xA;&#xA;function setProgressWidth()&#xA;{&#xA;  if(progressCreateUnityInstance == 100.0)&#xA;  {&#xA;    progressBarFull.style.width ="100%";&#xA;  }&#xA;  else&#xA;  {&#xA;    var percent;&#xA;    if(isMobile()) &#xA;    {&#xA;      percent = progressCreateUnityInstance * 0.6 + (progressPostCreateUnityInstance*0.5*0.2 + progressCreateUnityInstance*0.5*0.2*0.05);&#xA;      percent =  Math.min(percent, 90);&#xA;    }&#xA;    else&#xA;    {&#xA;      percent = progressCreateUnityInstance * 0.9 + progressPostCreateUnityInstance * 0.1;&#xA;      percent = Math.min(percent, 95);&#xA;    }&#xA;    progressBarFull.style.width = percent + "%";&#xA;  }&#xA;}&#xA;   &lt;/script&gt;&#xA;&lt;/html&gt;' data-scrollable="false" style="display: block; text-align: center; margin-right: auto; margin-left: auto; width: 800px; height: 600px"></div>
+                    <script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/c25f92/system/js/jot_min_view__en.js"></script>
+                    <script type="text/javascript">
+                        sites.codeembed.init();
+                    </script>
+                </div>
+            </div>
+        </td>
+    </body>
 </html>
