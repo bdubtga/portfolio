@@ -41,7 +41,7 @@
         <div class="absolute top-20 md:top-12 w-screen">
             <!--name div-->
             <div class="flex justify-center items-center">
-                <a href="https://benjiwallis.xyz" class="text-4xl md:text-8xl text-sky-500 font-extrabold select-none duration-300">Benji Wallis</a>
+                <a href="index.html" class="text-4xl md:text-8xl text-zinc-600 only:hover:text-sky-500 font-extrabold select-none duration-300">Benji Wallis</a>
             </div>
             <!--navigation-->
             <nav class="pt-2">
@@ -49,6 +49,7 @@
                     <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-zinc-600 hover:text-sky-500" href="about.html">About</a>
                     <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-zinc-600 hover:text-sky-500" href="/img/x-light.png" download>Resume</a>
                     <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-zinc-600 hover:text-sky-500" href="work.html">Works</a>
+                    <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-sky-500" href="gallery.html">Gallery</a>
                 </div>
             </nav>
         </div>
@@ -56,12 +57,26 @@
         <div class="absolute top-60 w-screen h-screen">
             <div class="flex justify-center items-center">
                 <!--main grid-->
-                <div class="grid grid-cols-1 gap-4 w-11/12 md:grid-cols-2">
-                    <div onclick="location.href='about.html'" class="hoverdiv bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
-                        <img class="rounded-3xl" src="/img/gallery/Weber-3.jpg" alt="Weber Barbeque"/>
+                <div class="grid grid-cols-1 gap-4 w-11/12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div onclick="location.href='about.html'" class="hoverdiv bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
+                            <img class="rounded-3xl" src="/img/gallery/Weber-3.jpg" alt="Weber Barbeque"/>
+                        </div>
+                        <div onclick="location.href='about.html'" class="hoverdiv bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
+                            <img class="rounded-3xl" src="/img/gallery/Weber-4.jpg" alt="Weber Barbeque"/>
+                        </div>
                     </div>
-                    <div onclick="location.href='about.html'" class="hoverdiv bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
-                        <img class="rounded-3xl" src="/img/gallery/Weber-4.jpg" alt="Weber Barbeque"/>
+                    <!--sub grid (contains smaller boxes)-->
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div onclick="location.href='about.html'" class="hoverdiv bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
+                            <img class="rounded-3xl" src="/img/gallery/Gat-1.jpg" alt="Weber Barbeque"/>
+                        </div>
+                        <div onclick="location.href='about.html'" class="hoverdiv bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
+                            <img class="rounded-3xl" src="/img/gallery/Gat-2.jpg" alt="Weber Barbeque"/>
+                        </div>
+                        <div onclick="location.href='about.html'" class="hoverdiv bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
+                            <img class="rounded-3xl" src="/img/gallery/Gat-3.jpg" alt="Weber Barbeque"/>
+                        </div>
                     </div>
                 </div>
             </div>
