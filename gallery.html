@@ -13,27 +13,38 @@
             body {
                 font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
             }
-            /*changes contents of div in made grid on hover*/
-            .hoverdiv:hover .hoverhide {
-                display: none;
-            }
-            .hoverdiv:hover .hovershow {
-                display: block;
-            }
-            .hovershow {
-                display: none;
-            }
         </style>
         <!-- Hotjar Tracking Code for https://benjiwallis.xyz -->
         <script>
-            (function(h,o,t,j,a,r){
-                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:3300517,hjsv:6};
-                a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
-                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            (function (h, o, t, j, a, r) {
+                h.hj =
+                    h.hj ||
+                    function () {
+                        (h.hj.q = h.hj.q || []).push(arguments);
+                    };
+                h._hjSettings = { hjid: 3300517, hjsv: 6 };
+                a = o.getElementsByTagName("head")[0];
+                r = o.createElement("script");
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
                 a.appendChild(r);
-            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+        </script>
+        <script>
+            function openimg(x) {
+                var element = document.getElementById("popup");
+                element.classList.remove("hidden");
+                var element = document.getElementById("popupimg");
+                element.src = "/gallery/" + x;
+                var element = document.getElementById("maingrid");
+                element.classList.add("hidden");
+            }
+            function closeimg() {
+                var element = document.getElementById("popup");
+                element.classList.add("hidden");
+                var element = document.getElementById("maingrid");
+                element.classList.remove("hidden");
+            }
         </script>
     </head>
     <body class="bg-zinc-900">
@@ -47,7 +58,7 @@
             <nav class="pt-2">
                 <div class="-mb-px flex justify-center">
                     <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-zinc-600 hover:text-sky-500" href="about.html">About</a>
-                    <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-zinc-600 hover:text-sky-500" href="/img/x-light.png" download>Resume</a>
+                    <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-zinc-600 hover:text-sky-500" href="/x-light.png" download>Resume</a>
                     <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-zinc-600 hover:text-sky-500" href="work.html">Works</a>
                     <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-sky-500" href="gallery.html">Gallery</a>
                 </div>
@@ -55,27 +66,34 @@
         </div>
         <!--main content-->
         <div class="absolute top-60 w-screen h-screen">
+            <!--popup-->
+            <div id="popup" class="flex justify-center items-center hidden">
+                <div class="w-1/3">
+                    <img id="popupimg" class="rounded-3xl" src="/gallery/1.jpg" alt="Img" />
+                </div>
+                <button class="text-zinc-100 bg-green-500 rounded-lg" onclick="closeimg()">Close</button>
+            </div>
             <div class="flex justify-center items-center">
                 <!--main grid-->
-                <div class="grid grid-cols-1 gap-4 w-11/12">
+                <div id="maingrid" class="grid grid-cols-1 gap-4 w-11/12">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div onclick="location.href='about.html'" class="hoverdiv bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
-                            <img class="rounded-3xl" src="/img/gallery/Weber-3.jpg" alt="Weber Barbeque"/>
+                        <div onclick="openimg('1.jpg')" class="bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
+                            <img class="rounded-3xl select-none" src="/gallery/1.jpg" alt="Weber Barbeque" />
                         </div>
-                        <div onclick="location.href='about.html'" class="hoverdiv bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
-                            <img class="rounded-3xl" src="/img/gallery/Weber-4.jpg" alt="Weber Barbeque"/>
+                        <div onclick="openimg('2.jpg')" class="bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
+                            <img class="rounded-3xl select-none" src="/gallery/2.jpg" alt="Weber Barbeque" />
                         </div>
                     </div>
                     <!--sub grid (contains smaller boxes)-->
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        <div onclick="location.href='about.html'" class="hoverdiv bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
-                            <img class="rounded-3xl" src="/img/gallery/Gat-1.jpg" alt="Weber Barbeque"/>
+                        <div onclick="openimg('3.jpg')" class="bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
+                            <img class="rounded-3xl select-none" src="/gallery/3.jpg" alt="Weber Barbeque" />
                         </div>
-                        <div onclick="location.href='about.html'" class="hoverdiv bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
-                            <img class="rounded-3xl" src="/img/gallery/Gat-2.jpg" alt="Weber Barbeque"/>
+                        <div onclick="openimg('4.jpg')" class="bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
+                            <img class="rounded-3xl select-none" src="/gallery/4.jpg" alt="Weber Barbeque" />
                         </div>
-                        <div onclick="location.href='about.html'" class="hoverdiv bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
-                            <img class="rounded-3xl" src="/img/gallery/Gat-3.jpg" alt="Weber Barbeque"/>
+                        <div onclick="openimg('5.jpg')" class="bg-zinc-700 p-2 rounded-3xl duration-300 hover:bg-sky-500">
+                            <img class="rounded-3xl select-none" src="/gallery/5.jpg" alt="Weber Barbeque" />
                         </div>
                     </div>
                 </div>
