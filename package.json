@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tw:build": "tailwindcss build ./css/tailwindsrc.css -o ./css/tailwind.css -i ./css/tailwindsrc.css --watch"
+    "tw:build": "tailwindcss build ./src/css/tailwind.css -o ./css/tailwind.css -i ./src/css/tailwind.css --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bdubtga/portfolio.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Benji Wallis",
   "bugs": {
     "url": "https://github.com/bdubtga/portfolio/issues"
   },
