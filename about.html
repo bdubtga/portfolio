@@ -30,6 +30,14 @@
                 a.appendChild(r);
             })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
         </script>
+        <script>
+            function sendemail() {
+                window.open("mailto:benji@benjiwallis.xyz");
+            }
+            function sendphone() {
+                window.open("tel:+64 27 378 8527");
+            }
+        </script>
     </head>
     <body class="bg-zinc-900">
         <!--header (name and navigation)-->
@@ -42,7 +50,6 @@
             <nav class="pt-2">
                 <div class="-mb-px flex justify-center">
                     <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-sky-500" href="about.html">About</a>
-                    <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-zinc-600 hover:text-sky-500" href="benjiresume.pdf" download>Resume</a>
                     <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-zinc-600 hover:text-sky-500" href="work.html">Works</a>
                     <a class="duration-300 no-underline uppercase tracking-wide font-bold text-xs py-3 mr-8 select-none text-zinc-600 hover:text-sky-500" href="gallery.html">Gallery</a>
                 </div>
@@ -54,7 +61,31 @@
                 <!--main grid-->
                 <div class="grid grid-cols-1 gap-4 w-11/12">
                     <div class="bg-zinc-700 p-10 rounded-3xl duration-300">
-                        <h2 class="text-zinc-100 text-xl">I am Benji Wallis, a student at Otumoetai College with a strong passion for the technology side of theatre, IT, and electronics. I am proficient in programming languages such as CSS, JavaScript, HTML, and Python. My experience running shows at venues like Baycourt and TMT has been an invaluable asset to me, it has allowed me to develop a wide range of technical skills. From lighting and sound design, to AV and control systems, I have had the opportunity to apply my knowledge in a real-world setting. I believe that technology can play a crucial role in enhancing the theatrical experience, and I am always looking for new ways to utilize it in my projects.<br><br>In my free time, I immerse myself in the world of technology. I enjoy experimenting with different techniques and tools to find new and innovative ways to incorporate technology into my projects. Whether it's theatre, IT or electronics-related, I am always seeking to improve my understanding and mastery of the field. I am determined to make a difference and impact with my skills, in both the performance and professional worlds.</h2>
+                        <p class="text-zinc-100 text-xl">I am Benji Wallis, a student at Otumoetai College with a strong passion for the technology side of theatre, IT, and electronics. I am proficient in programming languages such as CSS, JavaScript, HTML, and Python. My experience running shows at venues like Baycourt and TMT has been an invaluable asset to me, it has allowed me to develop a wide range of technical skills. From lighting and sound design, to AV and control systems, I have had the opportunity to apply my knowledge in a real-world setting. I believe that technology can play a crucial role in enhancing the theatrical experience, and I am always looking for new ways to utilize it in my projects.<br><br>In my free time, I immerse myself in the world of technology. I enjoy experimenting with different techniques and tools to find new and innovative ways to incorporate technology into my projects. Whether it's theatre, IT or electronics-related, I am always seeking to improve my understanding and mastery of the field. I am determined to make a difference and impact with my skills, in both the performance and professional worlds.</p>
+                    </div>
+                    <div class="bg-zinc-700 p-10 rounded-3xl duration-300 text-center">
+                        <h2 class="text-zinc-100 text-4xl pb-10">Contact Me</h2>
+                        <div class="flex justify-center items-center gap-10">
+                            <div id="email" onclick="sendemail()" class="flex justify-center items-center gap-10 hover:bg-sky-500 bg-zinc-600 duration-300 p-2 rounded-xl duration-300">
+                                <p class="text-zinc-100 text-xl">benji@benjiwallis.xyz</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path>
+                                    <path d="M3 6l9 6l9 -6"></path>
+                                    <path d="M15 18h6"></path>
+                                    <path d="M18 15l3 3l-3 3"></path>
+                                </svg>
+                            </div>
+                            <div id="phone" onclick="sendphone()" class="flex justify-center items-center gap-10 hover:bg-sky-500 bg-zinc-600 duration-300 p-2 rounded-xl selection:duration-300">
+                                <p class="text-zinc-100 text-xl">+64 27 378 8527</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+                                    <path d="M15 7a2 2 0 0 1 2 2"></path>
+                                    <path d="M15 3a6 6 0 0 1 6 6"></path>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
